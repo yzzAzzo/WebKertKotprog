@@ -1,0 +1,34 @@
+
+
+<form class="wrapper">
+  <br>
+
+  <mat-form-field class="field-wrapper">
+    <mat-label>City</mat-label>
+    <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="city" matInput placeholder="Szeged">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="field-wrapper">
+    <mat-label>Country</mat-label>
+    <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="country" matInput placeholder="Hungary">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="field-wrapper">
+    <mat-label>Post Code</mat-label>
+    <input [ngModelOptions]="{standalone: true}" [(ngModel)]="postCode" matInput placeholder="6723">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="field-wrapper">
+    <mat-label>Phone Number</mat-label>
+    <input [ngModelOptions]="{standalone: true}" [(ngModel)]="phoneNumber" matInput placeholder="+36239462533">
+  </mat-form-field>
+  <br>
+
+  <button mat-raised-button (click)="saveData()" color="primary">Save</button>
+
+</form>
+
+
